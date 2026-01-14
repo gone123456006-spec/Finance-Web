@@ -1,0 +1,9 @@
+# robots.txt for Finvyce Web App
+
+User-agent: *
+Allow: /
+Disallow: /tmp/
+Disallow: /docs/
+
+# Sitemap (update with your domain)
+# Sitemap: https://yourdomain.com/sitemap.xml

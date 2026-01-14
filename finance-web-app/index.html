@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Finvyce - Smart Financial Solutions | Fast, Flexible Funding for Businesses</title>
+  <meta name="description" content="Smart Financial Solutions - Fast, flexible funding for businesses. Get started with Finvyce today.">
+  <meta name="keywords" content="finance, funding, business loans, financial solutions, Finvyce">
+  <meta name="author" content="Finvyce">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Finvyce - Smart Financial Solutions">
+  <meta property="og:description" content="Fast, flexible funding for businesses">
+  <meta property="og:site_name" content="Finvyce">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Finvyce - Smart Financial Solutions">
+  <meta name="twitter:description" content="Fast, flexible funding for businesses">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://script.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com https:; font-src 'self' data:; connect-src 'self' https://script.google.com https://wa.me; frame-ancestors 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Favicon (add your favicon.ico to root directory) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Configuration (load before app.js) -->
+  <script src="js/config.js"></script>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">FINVYCE</div>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+  
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#advantages">Advantages</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#partners">Partners</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="btn secondary" onclick="openLogin()">Login</button>
+    <button class="btn primary" onclick="openRegister()">Register</button>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= IMAGE CAROUSEL ================= -->
+<section class="image-carousel-section">
+  <div class="image-carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1440&h=640&fit=crop" alt="Financial Planning">
+        <div class="slide-content">
+          <h1>Smart Financial Solutions</h1>
+          <p>Fast, flexible funding for businesses.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1440&h=640&fit=crop" alt="Investment Solutions">
+        <div class="slide-content">
+          <h1>Improve Cash Flow</h1>
+          <p>No collateral. No hidden charges.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1440&h=640&fit=crop" alt="Business Growth">
+        <div class="slide-content">
+          <h1>Trusted Finance Partner</h1>
+          <p>Secure, digital & transparent.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1440&h=640&fit=crop" alt="Digital Banking">
+        <div class="slide-content">
+          <h1>Digital Banking Excellence</h1>
+          <p>Modern solutions for your financial needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn prev" onclick="prevImage()" aria-label="Previous slide"></button>
+      <button class="carousel-btn next" onclick="nextImage()" aria-label="Next slide"></button>
+    </div>
+    <div class="carousel-indicators">
+      <span class="indicator active" onclick="goToImage(0)"></span>
+      <span class="indicator" onclick="goToImage(1)"></span>
+      <span class="indicator" onclick="goToImage(2)"></span>
+      <span class="indicator" onclick="goToImage(3)"></span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FINANCE HERO / VALUE SECTION ================= -->
+<section class="finance-hero" id="home">
+  <div class="finance-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="finance-left">
+      <h1>
+        Bharat’s <span>Smart & Trusted</span><br />
+        Working Capital Platform
+      </h1>
+      <p>
+        Unlock instant liquidity against your invoices through a secure,
+        transparent, and fully digital financing process.
+      </p>
+
+      <a href="pages/form.html" class="finance-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
+    </div>
+
+    <!-- RIGHT VISUAL -->
+    <div class="finance-right">
+      <div class="circle main-circle">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="Platform Expert" />
+        <div class="chat chat-left">
+          How does invoice financing work?
+        </div>
+      </div>
+
+      <div class="circle sub-circle">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces" alt="Business Owner" />
+        <div class="chat chat-right">
+          We help businesses get paid faster without waiting for buyers.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<!-- ================= BENEFITS ================= -->
+<section class="benefits" id="benefits">
+  <div class="benefits-header">
+    <p class="benefits-eyebrow">Why businesses choose RXIL</p>
+    <h2>Benefits</h2>
+    <p class="benefits-subtitle">
+      Transform your approved invoices into instant, low-cost liquidity without adding debt.
+    </p>
+  </div>
+
+  <div class="benefit-grid">
+    <div class="card benefit-card">
+      <div class="benefit-icon">⚡</div>
+      <h3>Improve Cash Flow</h3>
+      <p>Convert receivables into cash within 24–48 hours and keep your operations running smoothly.</p>
+      <span class="benefit-tag">Cash Flow</span>
+    </div>
+
+    <div class="card benefit-card">
+      <div class="benefit-icon">📉</div>
+      <h3>Reduced Cost of Funds</h3>
+      <p>Leverage competitive bidding from multiple financiers to access lower financing rates.</p>
+      <span class="benefit-tag">Cost Savings</span>
+    </div>
+
+    <div class="card benefit-card">
+      <div class="benefit-icon">🛡️</div>
+      <h3>No Debt • No Collateral</h3>
+      <p>Off-balance sheet financing with no additional collateral keeps your borrowing capacity free.</p>
+      <span class="benefit-tag">Risk Light</span>
+    </div>
+
+    <div class="card benefit-card">
+      <div class="benefit-icon">🤝</div>
+      <h3>Strengthen Relationships</h3>
+      <p>Offer better payment terms to your suppliers while maintaining your own cash comfort.</p>
+      <span class="benefit-tag">Partner Trust</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADVANTAGES ================= -->
+<section class="advantages" id="advantages">
+  <div class="advantages-header">
+    <p class="advantages-eyebrow">Built for modern, AI-led finance teams</p>
+    <h2>Advantages</h2>
+    <p class="advantages-subtitle">
+      Combine real-time data, rule-based decisioning and human insight to run your working capital like an AI co-pilot.
+    </p>
+  </div>
+
+  <div class="advantages-grid">
+    <div class="adv-card">
+      <div class="adv-icon">🤖</div>
+      <h3>Smart Risk Signals</h3>
+      <p>
+        Use data-driven credit signals and buyer performance trends to make faster, smarter funding decisions.
+      </p>
+      <ul class="adv-bullets">
+        <li>AI-style risk scoring</li>
+        <li>Buyer trend visibility</li>
+      </ul>
+    </div>
+
+    <div class="adv-card">
+      <div class="adv-icon">⚙️</div>
+      <h3>Automated Journeys</h3>
+      <p>
+        Set rules once and let the platform orchestrate offer creation, notifications and settlements for you.
+      </p>
+      <ul class="adv-bullets">
+        <li>Rule-based automation</li>
+        <li>Low manual ops load</li>
+      </ul>
+    </div>
+
+    <div class="adv-card">
+      <div class="adv-icon">🔐</div>
+      <h3>Bank‑grade Security</h3>
+      <p>
+        Operate on an infrastructure with encryption, audit trails and strict access controls as default.
+      </p>
+      <ul class="adv-bullets">
+        <li>Secure data processing</li>
+        <li>Regulatory-grade controls</li>
+      </ul>
+    </div>
+
+
+
+    <div class="adv-card">
+      <div class="adv-icon">📡</div>
+      <h3>Always‑on Visibility</h3>
+      <p>
+        Monitor live positions, funded amounts and utilisation across buyers, anchors and financiers in one view.
+      </p>
+      <ul class="adv-bullets">
+        <li>Real-time dashboards</li>
+        <li>Configurable views</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= VALUE CHAIN SERVICES ================= -->
+<section class="value-chain-section">
+  <div class="value-chain-container">
+    <div class="value-chain-header">
+      <p class="value-chain-eyebrow">Complete Value Chain Solutions</p>
+      <h2>The Services Benefitting The Entire Value Chain</h2>
+      <p class="value-chain-subtitle">
+        Tailored financial solutions for both buyers and sellers to optimize working capital and drive growth.
+      </p>
+    </div>
+
+    <!-- Toggle Buttons -->
+    <div class="value-chain-toggle">
+      <button class="value-toggle-btn active" data-target="buyer-tab">
+        <span class="toggle-icon">🏢</span>
+        <span>Buyer Benefits</span>
+      </button>
+      <button class="value-toggle-btn" data-target="seller-tab">
+        <span class="toggle-icon">🏭</span>
+        <span>Seller Benefits</span>
+      </button>
+    </div>
+
+    <!-- Buyer Benefits Tab -->
+    <div class="value-chain-content active" id="buyer-tab">
+      <div class="value-chain-grid">
+        <div class="value-card">
+          <div class="value-card-icon orange">
+            <span>⚡</span>
+          </div>
+          <h3>Extended Payment Terms</h3>
+          <p>Flexible payment cycles up to 90 days, giving you more time to manage cash flow effectively.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon green">
+            <span>📊</span>
+          </div>
+          <h3>Working Capital Optimization</h3>
+          <p>Improve liquidity and cash management while maintaining strong supplier relationships.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon blue">
+            <span>🤝</span>
+          </div>
+          <h3>Stronger Supplier Network</h3>
+          <p>Build loyalty with better financing terms and support your supply chain partners.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon purple">
+            <span>🔗</span>
+          </div>
+          <h3>Seamless Integration</h3>
+          <p>Auto-sync with ERP and procurement systems for streamlined operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seller Benefits Tab -->
+    <div class="value-chain-content" id="seller-tab">
+      <div class="value-chain-grid">
+        <div class="value-card">
+          <div class="value-card-icon orange">
+            <span>⚡</span>
+          </div>
+          <h3>Quick Payments</h3>
+          <p>Receive funds within 24-48 hours, eliminating long payment cycles and improving cash flow.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon green">
+            <span>🛡️</span>
+          </div>
+          <h3>No Recourse Financing</h3>
+          <p>Zero obligation to repay financiers - your receivables are converted to cash without risk.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon blue">
+            <span>📉</span>
+          </div>
+          <h3>Lower Cost of Capital</h3>
+          <p>Competitive rates through transparent bidding from multiple financiers on the platform.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-icon purple">
+            <span>🏦</span>
+          </div>
+          <h3>Multiple Financing Options</h3>
+          <p>Access to 100+ trusted financiers, ensuring you always get the best terms available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials" id="testimonials">
+  <h2>What our clients say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“RXIL helped us unlock cash stuck in receivables and smooth out our working capital.”</p>
+      <p class="testimonial-name">Anita Sharma</p>
+      <p class="testimonial-role">CFO, Sunrise Manufacturing</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“The digital process is simple, transparent and our suppliers love the faster payments.”</p>
+      <p class="testimonial-name">Rahul Verma</p>
+      <p class="testimonial-role">Head of Procurement, Bluewave Retail</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-quote">“Multiple financiers bidding for our invoices gave us great pricing without extra debt.”</p>
+      <p class="testimonial-name">Priya Iyer</p>
+      <p class="testimonial-role">Founder, Stellar Exports</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARTNERS ================= -->
+<section class="partners" id="partners">
+  <div class="partners-header">
+    <p class="partners-eyebrow">Trusted by financial leaders</p>
+    <h2>Our Partners</h2>
+    <p class="partners-subtitle">
+      RXIL collaborates with leading banks, NBFCs and corporates to power secure, large‑scale receivables financing.
+    </p>
+  </div>
+
+  <div class="partner-logos">
+    <div class="partner-card">
+      <div class="partner-logo-circle">🏦</div>
+      <div class="partner-text">
+        <p class="partner-name">Leading Banks</p>
+        <p class="partner-tagline">Anchor buyers & financiers</p>
+      </div>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-logo-circle">💼</div>
+      <div class="partner-text">
+        <p class="partner-name">Enterprise Corporates</p>
+        <p class="partner-tagline">Large anchor programmes</p>
+      </div>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-logo-circle">📊</div>
+      <div class="partner-text">
+        <p class="partner-name">NBFCs & FIs</p>
+        <p class="partner-tagline">Specialised credit partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="faq-header">
+    <p class="faq-eyebrow">Help & Support</p>
+    <h2>Frequently Asked Questions</h2>
+    <p class="faq-subtitle">
+      Answers to the most common questions about RXIL, onboarding, and how receivables financing works.
+    </p>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+            <span>
+              What is invoice / receivables financing?
+              <span class="help-icon" data-tooltip="Financiers pay you early for your approved invoices; your buyer then pays the financier on the original due date.">?</span>
+            </span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          It is a way to unlock funds tied up in your approved invoices by allowing financiers on the RXIL platform
+          to pay you early, while your buyer pays them on the original due date.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+            <span>
+              Will this create extra debt on my balance sheet?
+              <span class="help-icon" data-tooltip="Most programmes on RXIL are off‑balance sheet for the supplier, so the funding does not show as a new loan in your books.">?</span>
+            </span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No. Financing on RXIL is typically off–balance sheet for the supplier, so you get liquidity without
+          impacting your traditional borrowing limits.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>How fast can I receive funds once invoices are approved?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          In most cases, funds are credited within 24–48 hours after the invoice is accepted on the platform
+          and a financier bids for it.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>Do I need to install any software or change my ERP?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>
+          No major changes are required. RXIL can integrate with leading ERPs and can also be used through a secure
+          web portal for smaller setups.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+        <p class="contact-eyebrow">Talk to our team</p>
+      <h2>Contact Us</h2>
+      <p>
+        Have questions about onboarding, pricing or integration? Our team is here to help you get started.
+      </p>
+
+        <div class="contact-highlights">
+          <span class="contact-pill">Response within 1 business day</span>
+          <span class="contact-pill">Dedicated RXIL support</span>
+        </div>
+
+      <div class="contact-actions">
+        <a href="#" id="contactCallLink" class="btn contact-call"><span>Call Us</span></a>
+        <a href="#" id="contactWhatsAppLink" target="_blank" rel="noopener noreferrer" class="btn contact-whatsapp"><span>WhatsApp</span></a>
+      </div>
+
+      <ul class="contact-details">
+        <li><strong>Phone:</strong> <span id="contactPhoneDisplay"></span></li>
+        <li><strong>Email:</strong> <span id="contactEmailDisplay"></span></li>
+        <li><strong>Address:</strong> <span id="contactAddressDisplay"></span></li>
+      </ul>
+
+      <p class="contact-footnote">You can also reach us via the quick form – we’ll reply with a call or WhatsApp.</p>
+    </div>
+
+    <form class="contact-form">
+      <div class="contact-form-header">
+        <h3>Request a callback</h3>
+        <p>Share your details and we’ll connect you to an RXIL expert.</p>
+      </div>
+      <div class="field-group">
+        <input type="text" name="name" placeholder="Full name" required>
+      </div>
+      <div class="field-group">
+        <input type="email" name="email" placeholder="Work email" required>
+      </div>
+      <div class="field-group">
+        <input type="text" name="company" placeholder="Company name" required>
+      </div>
+      <div class="field-group">
+        <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+      </div>
+      <button type="button" class="btn primary contact-submit" onclick="sendCallbackWhatsApp()">Request a callback</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 Finvyce. All Rights Reserved.</p>
+</footer>
+
+<!-- Floating Call & WhatsApp -->
+<div class="floating-actions">
+  <a href="#" id="floatingCallLink" class="fab fab-call" aria-label="Call Us">
+    <svg class="fab-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l1.98-1.98a1 1 0 011.02-.24c1.12.37 2.33.57 3.59.57a1 1 0 011 1V21a1 1 0 01-1 1C11.3 22 2 12.7 2 2a1 1 0 011-1h3.27a1 1 0 011 1c0 1.26.2 2.47.57 3.59a1 1 0 01-.24 1.02l-1.98 1.98z" fill="currentColor"/>
+    </svg>
+  </a>
+  <a href="#" id="floatingWhatsAppLink" target="_blank" rel="noopener noreferrer" class="fab fab-whatsapp" aria-label="Chat on WhatsApp">
+    <svg class="fab-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.04 2C7.06 2 3 5.96 3 10.93c0 1.9.55 3.66 1.6 5.2L3 22l5.03-1.58a9.16 9.16 0 004.01.93h.01c4.98 0 9.04-3.96 9.04-8.93C21.09 5.96 17.03 2 12.04 2zm0 16.03h-.01a7.7 7.7 0 01-3.69-.99l-.26-.15-2.98.94.97-2.91-.17-.3a7.45 7.45 0 01-1.14-3.99c0-4.11 3.37-7.45 7.51-7.45 4.13 0 7.5 3.34 7.5 7.45 0 4.1-3.37 7.45-7.5 7.45zm4.1-5.34c-.22-.11-1.29-.64-1.49-.71-.2-.07-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.17-.48.06-.22-.11-.93-.37-1.78-1.18-.66-.61-1.11-1.36-1.24-1.58-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.19-.69-1.63-.18-.44-.37-.38-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.88 0 1.11.8 2.19.9 2.34.11.15 1.57 2.43 3.8 3.31.53.23.94.37 1.26.47.53.17 1.01.15 1.39.09.42-.06 1.29-.53 1.47-1.04.18-.5.18-.93.13-1.01-.05-.08-.2-.13-.42-.24z" fill="currentColor"/>
+    </svg>
+  </a>
+</div>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal" id="loginModal">
+  <div class="modal-box">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button class="btn primary">Login</button>
+    <p onclick="switchModal('loginModal','registerModal')">
+      Create Account
+    </p>
+  </div>
+</div>
+
+<!-- ================= REGISTER MODAL ================= -->
+<div class="modal" id="registerModal">
+  <div class="modal-box">
+    <h2>Register</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button class="btn primary">Register</button>
+    <p onclick="switchModal('registerModal','loginModal')">
+      Already have an account?
+    </p>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

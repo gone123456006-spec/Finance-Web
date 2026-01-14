@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>New Application - Finvyce</title>
+  <meta name="description" content="Submit your application for financial services with Finvyce">
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://script.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://script.google.com; frame-ancestors 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  <!-- Configuration (load before any scripts) -->
+  <script src="../js/config.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), transparent 55%),
+                  radial-gradient(circle at bottom right, rgba(45, 212, 191, 0.15), transparent 55%),
+                  #020617;
+      color: #e5e7eb;
+    }
+
+    .app-form-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .app-form-wrapper {
+      width: 100%;
+      max-width: 540px;
+      background: rgba(15, 23, 42, 0.96);
+      border-radius: 20px;
+      padding: 24px 22px 26px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-sizing: border-box;
+    }
+
+    .app-form-header {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .app-form-header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(22px, 3vw, 26px);
+      color: #f9fafb;
+    }
+
+    .app-form-header p {
+      margin: 0;
+      font-size: 13px;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+
+    .app-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .field-group label {
+      font-size: 13px;
+      color: #e5e7eb;
+    }
+
+    .field-group label span.required {
+      color: #f97373;
+      margin-left: 2px;
+    }
+
+    .field-group select,
+    .field-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #1f2937;
+      background: #020617;
+      color: #e5e7eb;
+      font-size: 13px;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .field-group select:focus,
+    .field-group input:focus {
+      border-color: #4a90e2;
+    }
+
+    .field-group input::placeholder {
+      color: #6b7280;
+    }
+
+    .app-form-footer {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .app-form-footer small {
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #4a90e2, #2dd4bf);
+      color: #f9fafb;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 16px 40px rgba(45, 212, 191, 0.3);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 20px 50px rgba(45, 212, 191, 0.4);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+      opacity: 0.9;
+      box-shadow: 0 10px 25px rgba(45, 212, 191, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .app-form-wrapper {
+        padding: 20px 16px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-form-page">
+    <div class="app-form-wrapper">
+      <div class="app-form-header">
+        <h1>New Application</h1>
+        <p>Please share a few details so we can process your request.</p>
+      </div>
+
+      <form
+        class="app-form"
+        id="newApplicationForm"
+        method="POST"
+        action="#"
+        data-form-action=""
+      >
+        <div class="field-group">
+          <label for="customerType">Customer Type<span class="required">*</span></label>
+          <select id="customerType" name="customerType" required>
+            <option value="">Select type</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+            <option value="anchor">Anchor Corporate</option>
+            <option value="financier">Financier</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="gstin">GSTIN<span class="required">*</span></label>
+          <input
+            type="text"
+            id="gstin"
+            name="gstin"
+            placeholder="Enter GSTIN"
+            maxlength="15"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="entityName">Name of Entity<span class="required">*</span></label>
+          <input
+            type="text"
+            id="entityName"
+            name="entityName"
+            placeholder="Registered legal name"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="buyerName">Buyer Name</label>
+          <input
+            type="text"
+            id="buyerName"
+            name="buyerName"
+            placeholder="Buyer / Anchor name (optional)"
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email Address<span class="required">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@company.com"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="mobile">Mobile Number<span class="required">*</span></label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            placeholder="10-digit mobile number"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+
+        <div class="app-form-footer">
+          <button type="submit" class="btn-submit">Submit</button>
+          <small>
+            On submit, details will be posted to your configured Google Apps Script endpoint and stored in Google Sheets.
+          </small>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script>
+    // Initialize form action from config
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('newApplicationForm');
+      if (form && window.CONFIG && window.CONFIG.googleAppsScript) {
+        form.action = window.CONFIG.googleAppsScript.formSubmissionUrl;
+      } else if (form) {
+        console.warn('CONFIG not loaded. Form submission may not work.');
+        // Fallback to original URL if config not available
+        form.action = 'https://script.google.com/macros/s/AKfycbzF2cMkTuooBniQjcfTsO3N3UzYOqSJiSiwV8aD9duPX7jPj7ofJ7abBaYotZWveILe/exec';
+      }
+    });
+  </script>
+</body>
+</html>

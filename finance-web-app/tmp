@@ -1,0 +1,52 @@
+*** Update File: index.html
+@@
+-<!-- ================= BENEFITS ================= -->
+-<section class="benefits" id="benefits">
+-  <h2>Benefits</h2>
+-  <div class="benefit-grid">
+-    <div class="card">Improve Cash Flow</div>
+-    <div class="card">Reduced Cost of Funds</div>
+-    <div class="card">Best Funding Rates</div>
+-    <div class="card">No Debt • No Collateral</div>
+-  </div>
+-</section>
++<!-- ================= BENEFITS ================= -->
++<section class="benefits" id="benefits">
++  <div class="benefits-header">
++    <p class="benefits-eyebrow">Why businesses choose RXIL</p>
++    <h2>Benefits</h2>
++    <p class="benefits-subtitle">
++      Transform your approved invoices into instant, low-cost liquidity without adding debt.
++    </p>
++  </div>
++
++  <div class="benefit-grid">
++    <div class="card benefit-card">
++      <div class="benefit-icon">⚡</div>
++      <h3>Improve Cash Flow</h3>
++      <p>Convert receivables into cash within 24–48 hours and keep your operations running smoothly.</p>
++      <span class="benefit-tag">Cash Flow</span>
++    </div>
++
++    <div class="card benefit-card">
++      <div class="benefit-icon">📉</div>
++      <h3>Reduced Cost of Funds</h3>
++      <p>Leverage competitive bidding from multiple financiers to access lower financing rates.</p>
++      <span class="benefit-tag">Cost Savings</span>
++    </div>
++
++    <div class="card benefit-card">
++      <div class="benefit-icon">🛡️</div>
++      <h3>No Debt • No Collateral</h3>
++      <p>Off-balance sheet financing with no additional collateral keeps your borrowing capacity free.</p>
++      <span class="benefit-tag">Risk Light</span>
++    </div>
++
++    <div class="card benefit-card">
++      <div class="benefit-icon">🤝</div>
++      <h3>Strengthen Relationships</h3>
++      <p>Offer better payment terms to your suppliers while maintaining your own cash comfort.</p>
++      <span class="benefit-tag">Partner Trust</span>
++    </div>
++  </div>
++</section>
